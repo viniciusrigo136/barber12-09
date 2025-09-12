@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Powered-By "Hostinger Horizons"
+<<<<<<< HEAD
+</IfModule>
+=======
+</IfModule>
+>>>>>>> 307d3833ef302c6b9711686b3eb921c13b7f12e4
